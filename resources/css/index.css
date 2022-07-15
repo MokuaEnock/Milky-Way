@@ -258,6 +258,26 @@ select {
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
 }
+#sect4_cont {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sect4_conts {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sect4_containers {
+  width: 50%;
+  height: 100%;
+}
 /*===========Section 5===============*/
 #section5 {
   width: 100%;
