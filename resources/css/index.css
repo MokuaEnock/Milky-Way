@@ -24,6 +24,10 @@ h3 {
   text-align: center;
   text-decoration: underline;
 }
+label {
+  font-size: 1.5vw;
+}
+
 /*==========Head===============*/
 #head {
   height: 4vw;
@@ -140,7 +144,7 @@ h3 {
 }
 /*===========Section 2===============*/
 #section2 {
-  height: 30vw;
+  height: 40vw;
   width: 100%;
   margin-top: 3%;
   display: flex;
@@ -165,6 +169,24 @@ h3 {
   row-gap: 2%;
 }
 .sect2_conts {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.input {
+  width: 25%;
+  height: 20%;
+  border-radius: 1vw;
+  font-size: 1.5vw;
+  text-align: center;
+  border: 0.2vw seagreen solid;
+}
+
+select {
+  height: 80%;
+  width: 25%;
+  font-size: 1.5vw;
+  border: 0.2vw #d0f0c0 solid;
 }
 /*===========Section 3===============*/
 #section3 {
