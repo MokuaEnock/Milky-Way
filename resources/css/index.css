@@ -185,7 +185,9 @@ select {
   height: 23%;
   width: 25%;
   font-size: 1.5vw;
-  border: 0.2vw #d0f0c0 solid;
+  border: 0.2vw solid#d0f0c0;
+  border-radius: 0.4vw;
+  text-align: center;
 }
 /*===========Section 3===============*/
 #section3 {
@@ -351,4 +353,6 @@ form {
   height: 100%;
   width: 100%;
   font-size: 1.5vw;
+  line-height: 190%;
+  text-align: center;
 }
