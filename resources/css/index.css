@@ -175,14 +175,14 @@ label {
 
 .input {
   width: 25%;
-  height: 20%;
+  height: 15%;
   border-radius: 1vw;
   font-size: 1.5vw;
   text-align: center;
   border: 0.2vw seagreen solid;
 }
 select {
-  height: 80%;
+  height: 23%;
   width: 25%;
   font-size: 1.5vw;
   border: 0.2vw #d0f0c0 solid;
@@ -274,6 +274,50 @@ select {
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
 }
+#sect5_cont {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sect5_conts {
+  width: 47%;
+  height: 100%;
+}
+#total {
+  height: 10%;
+  width: 100%;
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.total {
+  height: 100%;
+  width: 50%;
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect5_cont1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#s5_cont1_head {
+  width: 100%;
+  height: 10%;
+}
+#s5_cont1_1 {
+  width: 100%;
+  height: 90%;
+}
 /*===========Section 6===============*/
 #section6 {
   width: 100%;
@@ -292,11 +336,19 @@ select {
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
 }
-
+#sect6_cont {
+  width: 100%;
+  height: 90%;
+}
 /*===========Footer===============*/
 #foot {
   width: 100%;
   height: 20vw;
   margin-top: 3%;
   margin-bottom: 1%;
+}
+form {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5vw;
 }
