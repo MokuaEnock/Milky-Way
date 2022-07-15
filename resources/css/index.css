@@ -27,6 +27,13 @@ h3 {
 label {
   font-size: 1.5vw;
 }
+form {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5vw;
+  line-height: 190%;
+  text-align: center;
+}
 
 /*==========Head===============*/
 #head {
@@ -352,6 +359,7 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 #sect6_head {
   height: 10%;
@@ -365,18 +373,27 @@ select {
 #sect6_cont {
   width: 100%;
   height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
+
+#forecast_cont {
+  width: 20%;
+  height: 10%;
+}
+#forecast_cont input {
+  width: 100%;
+  height: 100%;
+  border: 0.2vw solid seagreen;
+  font-size: 1.7vw;
+}
+
 /*===========Footer===============*/
 #foot {
   width: 100%;
   height: 20vw;
   margin-top: 3%;
   margin-bottom: 1%;
-}
-form {
-  height: 100%;
-  width: 100%;
-  font-size: 1.5vw;
-  line-height: 190%;
-  text-align: center;
 }
