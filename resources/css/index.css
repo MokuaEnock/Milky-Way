@@ -108,7 +108,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
 }
-#sect2_head {
+#sect1_head {
   width: 30%;
   height: 10%;
   margin-left: 10%;
@@ -117,7 +117,7 @@ h2 {
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
 }
-#sect2_cont {
+#sect1_cont {
   width: 100%;
   height: 90%;
   display: flex;
@@ -125,7 +125,7 @@ h2 {
   justify-content: space-evenly;
   align-items: center;
 }
-.sect2_conts {
+.sect1_conts {
   width: 49%;
   height: 100%;
   padding-left: 3%;
@@ -135,6 +135,11 @@ h2 {
   font-size: 1.6vw;
 }
 /*===========Section 2===============*/
+#section2 {
+  height: 30vw;
+  width: 100%;
+  margin-top: 3%;
+}
 /*===========Section 3===============*/
 /*===========Section 4===============*/
 /*===========Section 5===============*/
