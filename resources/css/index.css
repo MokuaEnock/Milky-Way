@@ -246,6 +246,12 @@ table {
   width: 48%;
   height: 100%;
 }
+#sect3_cont2 ul {
+  font-size: 1.5vw;
+  list-style: none;
+  margin-left: 5%;
+  line-height: 150%;
+}
 /*===========Section 4===============*/
 #section4 {
   width: 100%;
