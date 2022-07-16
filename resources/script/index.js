@@ -10,7 +10,6 @@ let totalFresian = 0
 for(var i in array){
     totalFresian += parseInt(array[i])
 }
-console.log(totalFresian)
 document.getElementById('pd_cont1_cont').innerHTML = ('The total number of fresians is: ' + totalFresian)
 
 //Total number of Jersey
@@ -25,9 +24,37 @@ let totalJersey = 0
 for(var i in array2){
     totalJersey += parseInt(array2[i])
 }
-console.log(totalJersey)
 document.getElementById('pd_cont1_cont').innerHTML = ('The total number of Jersey is: ' + totalJersey)
 
 //total number of cows
 let totalCows = parseInt(totalFresian + totalJersey)
-console.log(totalCows)
+document.getElementById('pd_cont1_cont').innerHTML =('The total number of cows is: ' + totalCows)
+
+//Total number of employees
+let arrayEmployees = ['tDrivers', 'tMen']
+let arrayEmp = []
+for(let i = 0; i < arrayEmployees.length; i++){
+    let text = document.getElementById(arrayEmployees[i])
+    let text1 = text.innerHTML
+    arrayEmp.push(text1)
+}
+let totalEmployees = 0
+for (var i in arrayEmp){
+    totalEmployees+=parseInt(arrayEmp[i])
+}
+document.getElementById('pd_cont1_cont').innerHTML = ('The total number of employees is: ' + totalEmployees)
+
+// total equipment
+let arrayEquips = ['tVehicles', 'tMilkers']
+let arrayEqp = []
+for(let i = 0; i < arrayEquips.length; i++){
+    let text = document.getElementById(arrayEquips[i])
+    let text1 = text.innerHTML
+    arrayEqp.push(text1)
+}
+let totalEquipment = 0
+for (var i in arrayEqp){
+    totalEquipment+=parseInt(arrayEqp[i])
+}
+console.log(totalEquipment)
+document.getElementById('pd_cont1_cont').innerHTML = ('The total number of employees is: ' + totalEquipment)
