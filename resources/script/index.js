@@ -66,5 +66,28 @@ document.getElementById('farmMachinery').innerHTML = (totalEquipment)
 document.getElementById('subButton').onclick = function(){
     var serviceFee = document.getElementById('s4_service').value;
     let serviceFeeDay = (serviceFee/30)
-    console.log(serviceFeeDay)
+    document.getElementById('serviceCost').innerHTML = Math.floor(serviceFeeDay)
+
+    var medCost = document.getElementById('medicine').value;
+    var medCostDay = Math.floor(medCost/30)
+    document.getElementById('medicineCost').innerHTML = medCostDay
+
+    var landRate =document.getElementById('valueLand').value;
+    var landRateDay = Math.floor((landRate * 0.115)/365)
+    document.getElementById('landRate').innerHTML = landRateDay
+
+    var feeds =document.getElementById('feeds').value;
+    var feedsDay = Math.floor(feeds/30)
+    document.getElementById('costFeeds').innerHTML = feedsDay
+
+    var wages =document.getElementById('employees').value;
+    var wagesDay = Math.floor((wages * totalEmployees))
+    document.getElementById('wages').innerHTML = wagesDay
+
+    var other =document.getElementById('other').value;
+    var otherDay = Math.floor(other)
+    document.getElementById('otherCost').innerHTML = otherDay
+
+    prodCostDay = (otherDay + wagesDay + feedsDay + landRateDay + medCostDay + serviceFeeDay)
+    document.getElementById('productionCost').innerHTML = prodCostDay
 }
