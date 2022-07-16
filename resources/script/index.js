@@ -62,3 +62,7 @@ console.log(totalEquipment)
 document.getElementById('pd_cont1_cont').innerHTML = ('The total number of employees is: ' + totalEquipment)
 
 /*============================Production Cost=================================*/
+/* let service = prompt('How much do you spend on servicing machinery in six months?') */
+function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);}
