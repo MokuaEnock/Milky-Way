@@ -91,3 +91,7 @@ document.getElementById('subButton').onclick = function(){
     prodCostDay = (otherDay + wagesDay + feedsDay + landRateDay + medCostDay + serviceFeeDay)
     document.getElementById('productionCost').innerHTML = Math.floor(prodCostDay)
 }
+document.getElementById('subButton').onclick = function(){
+    var year = document.getElementById('yearForecast').value;
+    console.log(year)
+}
