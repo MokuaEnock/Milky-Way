@@ -345,6 +345,7 @@ label {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 0.2vw 0.2vw 0.8vw;
 }
 #prod_cont {
   height: 90%;
@@ -365,7 +366,7 @@ label {
 /*===========Section 5===============*/
 #section5 {
   width: 100%;
-  height: 30vw;
+  height: 40vw;
   margin-top: 3%;
   display: flex;
   flex-direction: column;
@@ -379,54 +380,43 @@ label {
   background-color: #d0f0c0;
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-#sect5_cont {
+#sect5_form {
+  height: 90%;
   width: 100%;
-  height: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.sect5_conts {
-  width: 47%;
-  height: 100%;
-}
-#total {
-  height: 10%;
-  width: 100%;
-  font-size: 1.5vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.total {
-  height: 100%;
-  width: 50%;
-  font-size: 1.5vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#sect5_cont1 {
+  border: 0.2vw solid seagreen;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
-#s5_cont1_head {
+#s5f_cont1 {
   width: 100%;
-  height: 10%;
+  height: 30%;
 }
-#s5_cont1_1 {
+#s5f_cont2 {
   width: 100%;
-  height: 90%;
+  height: 50%;
 }
-.formProduction {
+#s5f_cont3 {
+  width: 1000%;
+  height: 20%;
+}
+#s5f_cont2_cont {
+  height: 100%;
   width: 100%;
-  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.s5f_cont2_1 {
+  width: 48%;
+  height: 100%;
 }
 /*===========Section 6===============*/
 #section6 {
@@ -455,20 +445,10 @@ label {
   justify-content: space-between;
   align-items: center;
 }
-
-#forecast_cont {
+#subButton2 {
   width: 20%;
   height: 10%;
 }
-#forecast_cont input {
-  width: 100%;
-  height: 100%;
-  border: 0.2vw solid seagreen;
-  font-size: 2vw;
-  border-radius: 0.4vw;
-  box-shadow: 0.2vw 0.2vw 0.8vw grey;
-}
-
 /*===========Footer===============*/
 #foot {
   width: 100%;

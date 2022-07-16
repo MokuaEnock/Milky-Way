@@ -89,5 +89,5 @@ document.getElementById('subButton').onclick = function(){
     document.getElementById('otherCost').innerHTML = otherDay
 
     prodCostDay = (otherDay + wagesDay + feedsDay + landRateDay + medCostDay + serviceFeeDay)
-    document.getElementById('productionCost').innerHTML = prodCostDay
+    document.getElementById('productionCost').innerHTML = Math.floor(prodCostDay)
 }

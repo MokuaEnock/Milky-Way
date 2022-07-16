@@ -339,103 +339,59 @@
     <!---===========Section 5===============-->
     <section id="sect5">
       <div id="section5">
-        <div id="sect5_head"><h2>Sales</h2></div>
-        <div id="sect5_cont">
-          <div id="sect5_cont1" class="sect5_conts">
-            <div id="s5_cont1_head"><h3>Major Partners</h3></div>
-            <div id="s5_cont1_1">
-              <form
-                action="https://httpbin.org/get"
-                method="get"
-                target="_blank"
-              >
-                <label for="buying">Current buying price per liter?</label>
+        <div id="sect5_head">
+          <h2>Sales</h2>
+        </div>
+        <form id="sect5_form" onsubmit="return false;">
+          <div id="s5f_cont1">
+            <h3>Milk Production</h3>
+            <label for="jerseyMilk"
+              >Average milk production of a Jersey per day?</label
+            >
+            <input type="number" id="jerseyMilk" />
+            <br />
+            <label for="fresianMilk"
+              >Average milk production of a Fresian per day?</label
+            >
+            <input type="number" id="fresianMilk" />
+          </div>
+          <div id="s5f_cont2">
+            <div id="s5f_cont2_cont">
+              <div class="s5f_cont2_1">
+                <h3>Major Partners</h3>
+                <label for="majorPrice">Buying price per litre?</label>
                 <br />
-                <input
-                  type="number"
-                  id="buying"
-                  class="input"
-                  placeholder="45.0"
-                />
+                <input type="number" id="majorPrice" class="input" />
                 <br />
-                <label for="litres">Number of litres bought per day?</label>
+                <label for="majorLitre">Number of litres bought?</label>
                 <br />
-                <input
-                  type="number"
-                  id="litres"
-                  class="input"
-                  placeholder="500.0"
-                />
+                <input type="number" id="majorLitre" class="input" />
+              </div>
+              <div class="s5f_cont2_1">
+                <h3>Minor Partners</h3>
+                <label for="minorPrice">Buying price per litre?</label>
                 <br />
-                <label for="expansion"
-                  >How many days of purchase per week?</label
-                >
+                <input type="number" class="input" id="minorPrice" />
                 <br />
-                <select name="expansion" id="expansion" id="select">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                </select>
-              </form>
+                <label for="minorLitre">Number of litres bought?</label>
+                <br />
+                <input type="number" class="input" id="minorLitre" />
+              </div>
             </div>
           </div>
-          <div id="sect5_cont2" class="sect5_conts">
-            <div id="s5_cont1_head"><h3>Minor Partners</h3></div>
-            <div id="s5_cont1_1">
-              <form action="#">
-                <label for="buying">Current buying price per liter?</label>
-                <br />
-                <input
-                  type="number"
-                  id="buying"
-                  class="input"
-                  placeholder="45.0"
-                />
-                <br />
-                <label for="litres">Number of litres bought per day?</label>
-                <br />
-                <input
-                  type="number"
-                  id="litres"
-                  class="input"
-                  placeholder="500.0"
-                />
-                <br />
-                <label for="expansion"
-                  >How many days of purchase per week?</label
-                >
-                <br />
-                <select name="expansion" id="expansion" id="select">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                </select>
-              </form>
-            </div>
+          <div id="s5f_cont3">
+            <h3>Year to Forecast</h3>
+            <label for="yearForecast"></label>
+            <input type="number" id="yearForecast" />
           </div>
-        </div>
-        <div id="total">
-          <div class="total">Total</div>
-        </div>
+        </form>
       </div>
     </section>
     <!---===========Section 6===============-->
     <section id="sect6">
       <div id="section6">
         <div id="sect6_head"><h2>Report</h2></div>
-        <div id="forecast_cont">
-          <form action="#">
-            <input type="button" value="Forecast" />
-          </form>
-        </div>
+        <button id="subButton2" type="button" class="button">Submit</button>
         <div id="sect6_cont"></div>
       </div>
     </section>
