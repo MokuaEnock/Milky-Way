@@ -39,9 +39,19 @@ table {
   margin-left: 5%;
 }
 .input {
-  height: 15%;
+  height: 12%;
   width: 20%;
+  font-size: 1.3vw;
+}
+label {
   font-size: 1.5vw;
+  line-height: 100%;
+}
+#subButton {
+  width: 20%;
+  height: 22%;
+  border: 0.2 solid seagreen;
+  font-size: 1.3vw;
 }
 /*==========Head===============*/
 #head {
@@ -317,7 +327,7 @@ table {
 }
 /*=========Production report=============*/
 #production_rep {
-  height: 20vw;
+  height: 30vw;
   width: 100%;
   margin-top: 3%;
   display: flex;
@@ -348,6 +358,9 @@ table {
   width: 48%;
   height: 100%;
   font-size: 1.5vw;
+}
+#sect4_form {
+  font-size: 1.4vw;
 }
 /*===========Section 5===============*/
 #section5 {

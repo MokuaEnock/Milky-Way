@@ -201,21 +201,88 @@
       <div id="section4">
         <div id="sect4_head"><h2>Production</h2></div>
         <div id="sect4_cont">
-          <form id="sect4_form">
+          <form id="sect4_form" onsubmit="return false;">
             <div id="s4f_cont1" class="s4f_conts">
               <div id="s4f_cont1_1" class="s4f_conts_">
                 <h3>Capital</h3>
+                <label for="s4_service"
+                  >How much do you spend on servicing machinery in a
+                  month?</label
+                >
+                <br />
+                <input
+                  type="number"
+                  id="s4_service"
+                  class="input"
+                  placeholder="1000"
+                />
+                <br />
+                <label for="medicine"
+                  >How much do you spend on medicine per month?</label
+                >
+                <br />
+                <input
+                  type="number"
+                  class="input"
+                  id="medicine"
+                  placeholder="5000"
+                />
               </div>
               <div id="s4f_cont1_2" class="s4f_conts_">
                 <h3>Land</h3>
+                <label for="valueLand">
+                  What is the current valuation of your Land?
+                </label>
+                <br />
+                <input
+                  type="number"
+                  id="valueLand"
+                  class="input"
+                  placeholder="1000000"
+                />
+                <br />
+                <label for="feeds"
+                  >How much do you spend on feeds per month?</label
+                >
+                <br />
+                <input
+                  type="number"
+                  id="feeds"
+                  class="input"
+                  placeholder="5000"
+                />
               </div>
             </div>
             <div id="s4f_cont2" class="s4f_conts">
               <div id="s4f_cont2_1" class="s4f_conts_">
                 <h3>Labor</h3>
+                <label for="employees"
+                  >What are the wages for an employee in an day?</label
+                >
+                <br />
+                <input
+                  type="number"
+                  id="employees"
+                  class="input"
+                  placeholder="500"
+                />
               </div>
               <div id="s4f_cont2_2" class="s4f_conts_">
                 <h3>Entrepreneurship</h3>
+                <label for="other"
+                  >How much do you spend on miscellaneous cost in a day?</label
+                >
+                <br />
+                <input
+                  type="number"
+                  id="other"
+                  class="input"
+                  placeholder="500"
+                />
+                <br />
+                <button id="subButton" type="button" class="button">
+                  Submit
+                </button>
               </div>
             </div>
           </form>
@@ -232,7 +299,9 @@
           </div>
           <div class="prod_conts" id="prod_cont2">
             <div id="pd_cont2_head"><h3>Production Cost</h3></div>
-            <div id="pd_cont1_cont"></div>
+            <div id="pd_cont1_cont">
+              <p id="result"></p>
+            </div>
           </div>
         </div>
       </div>
