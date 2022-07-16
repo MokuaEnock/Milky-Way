@@ -12,7 +12,7 @@ let totalFresian = 0
 for(var i in array){
     totalFresian += parseInt(array[i])
 }
-document.getElementById('pd_cont1_cont').innerHTML = ('The total number of fresians is: ' + totalFresian)
+document.getElementById('fresianCows').innerHTML = (totalFresian)
 
 //Total number of Jersey
 let array2 = []
@@ -26,11 +26,11 @@ let totalJersey = 0
 for(var i in array2){
     totalJersey += parseInt(array2[i])
 }
-document.getElementById('pd_cont1_cont').innerHTML = ('The total number of Jersey is: ' + totalJersey)
+document.getElementById('jerseyCows').innerHTML = (totalJersey)
 
 //total number of cows
 let totalCows = parseInt(totalFresian + totalJersey)
-document.getElementById('pd_cont1_cont').innerHTML =('The total number of cows is: ' + totalCows)
+document.getElementById('allCows').innerHTML =(totalCows)
 
 //Total number of employees
 let arrayEmployees = ['tDrivers', 'tMen']
@@ -44,7 +44,7 @@ let totalEmployees = 0
 for (var i in arrayEmp){
     totalEmployees+=parseInt(arrayEmp[i])
 }
-document.getElementById('pd_cont1_cont').innerHTML = ('The total number of employees is: ' + totalEmployees)
+document.getElementById('employe').innerHTML = (totalEmployees)
 
 // total equipment
 let arrayEquips = ['tVehicles', 'tMilkers']
@@ -59,11 +59,12 @@ for (var i in arrayEqp){
     totalEquipment+=parseInt(arrayEqp[i])
 }
 console.log(totalEquipment)
-document.getElementById('pd_cont1_cont').innerHTML = ('The total number of employees is: ' + totalEquipment)
+document.getElementById('farmMachinery').innerHTML = (totalEquipment)
 
 /*============================Production Cost=================================*/
 /* ======Service cost===== */
 document.getElementById('subButton').onclick = function(){
     var serviceFee = document.getElementById('s4_service').value;
-   
+    let serviceFeeDay = (serviceFee/30)
+    console.log(serviceFeeDay)
 }
