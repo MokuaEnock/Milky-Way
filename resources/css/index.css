@@ -32,7 +32,12 @@ form {
   line-height: 190%;
   text-align: center;
 }
-
+table {
+  text-align: center;
+  font-size: 1.5vw;
+  margin-top: 5%;
+  margin-left: 5%;
+}
 /*==========Head===============*/
 #head {
   height: 4vw;
