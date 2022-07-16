@@ -1,3 +1,5 @@
+
+/*============================Total production=================================*/
 //find the total number of fresian
 let array = []
 let invent = ['fresianCow1', 'fresianCow2']
@@ -58,3 +60,5 @@ for (var i in arrayEqp){
 }
 console.log(totalEquipment)
 document.getElementById('pd_cont1_cont').innerHTML = ('The total number of employees is: ' + totalEquipment)
+
+/*============================Production Cost=================================*/
