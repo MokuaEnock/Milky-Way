@@ -463,11 +463,11 @@ label {
   justify-content: space-between;
   align-items: center;
 }
-#subButton2 {
-  width: 20%;
-  height: 10%;
+.reports {
+  width: 30%;
+  height: 100%;
+  font-size: 1.4vw;
 }
-
 /*===========Footer===============*/
 #foot {
   width: 100%;
