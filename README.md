@@ -35,7 +35,7 @@ The landing page has been built with:
 ## Usage
 
 To use the website you just have to provide some data regarding th farm and the report will be generated automatically.
-[here]()
+[here](https://mokuaenock.github.io/Milky-Way/)
 
 ## Contributors
 
@@ -61,4 +61,4 @@ The project is distributed under the  [MIT license](https://opensource.org/licen
 
 Enock Mokua - [@254_enok](https://twitter.com/254_enok) - mokuaenock0@gmail.com
 
-Project Link: [https://github.com/MokuaEnock/Agriplus-]()
+Project Link: [https://github.com/MokuaEnock/Agriplus-](https://mokuaenock.github.io/Milky-Way/)
