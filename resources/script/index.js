@@ -113,7 +113,15 @@ document.getElementById('button5_1').onclick = function(){
         alert('Milk sold cannot be greater than milk produced!')
     }
     else{
-        
+        //milk produced daily
+       let milkProdWeek = cowTotalDayMilk *  7
+       document.getElementById('milkProdWeek').innerHTML = milkProdWeek
+        //milk sold weekly
+        let milkSoldWeek = parseInt(minorMilk) + parseInt(majorMilk)
+        document.getElementById('milkSoldWeek').innerHTML = milkProdWeek
+        //revenue generated daily
+        let revenueWeek = milkSoldWeek * parseInt(bpMajor)
+        document.getElementById('revenueWeek').innerHTML = revenueWeek
     }
 }
 
@@ -138,9 +146,59 @@ document.getElementById('button5_2').onclick = function(){
         alert('Milk sold cannot be greater than milk produced!')
     }
     else{
+        var yearSplit = parseInt(year.split(-2))
+        if (yearSplit%4 == 0){
+            var totalDays = 0
+            var leapYear = Object.values(monthsLeap)
+            for(var i in leapYear){
+                totalDays += parseInt(leapYear[i])
+        }
+        //milk produce per month
+        let monthMilkProd = []
+        let monthValues = Object.values(leapYear)
+        for(i = 0; i < monthValues.length; i ++){
+            let monthDay = cowTotalDayMilk * parseInt(monthValues[i])
+            monthMilkProd.push(monthDay)
+        }
+        let keyMonth = Object.keys(monthsLeap)
         
+        let monthMilkProd2 = []
+        for(var i = 0; i<monthMilkProd.length; i++){
+            for(var y = 0; y<keyMonth.length; y++){
+                var milkMonthProd = "The total milk produced in " + keyMonth[y] + " is "+ monthMilkProd[i]  + "<br/>"
+                monthMilkProd2.push(milkMonthProd)
+            }
+        }
+        document.getElementById('monthMilkProd2').innerHTML = [...new Set(monthMilkProd2)]
+        //Quantity of milk sold per month
+        let monthMilkSale = []
+        for(var i = 0; i<monthValues.length; i++){
+            let soldDay = totalMilk * parseInt(monthValues[i])
+            monthMilkSale.push(soldDay)
+        }
+        let soldMilk2 = []
+        for(var i = 0; i < monthMilkSale.length; i++){
+            for(var y = 0; y < keyMonth.length; y++){
+                var milkMonthSold = "The total milk sold in " + keyMonth[y] + ' is ' + monthMilkSale[i] + "<br/>"
+                soldMilk2.push(milkMonthSold)
+            }
+        }
+        document.getElementById('milkMonthSold2').innerHTML = [...new Set(soldMilk2)]
+        //Sale of milk per month
+        let monthRevenue = []
+        for (var i = 0; i<monthValues.length; i++){
+            let revenue = totalMilk * parseInt(monthValues) * parseInt(bpMajor)
+            monthRevenue.push(revenue)
+        }
+        let revenueMonth = []
+        for(var i = 0; i < monthRevenue.length; i++){
+            for(var y=0; y<keyMonth.length; y++){
+                var revenueMonth1 = "The total revenue generated in " + keyMonth[y] + ' is ' + monthRevenue[i] + "<br/>"
+                revenueMonth.push(revenueMonth1)
+            }
+        }
+        document.getElementById('revenueMonth').innerHTML = [...new Set(revenueMonth)]
     }
-}
 
 /* ==============Yearly forecast================ */
 document.getElementById('button5_3').onclick = function(){
@@ -201,4 +259,6 @@ document.getElementById('button5_3').onclick = function(){
             document.getElementById('revenueYear').innerHTML = revenueYear
         }
     }
+}
+}
 }
