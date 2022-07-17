@@ -88,7 +88,7 @@ table td {
 #navigation {
   height: 5vw;
   background-color: #143d59;
-  margin-bottom: 5%;
+
   z-index: 1;
   color: white;
   display: flex;
@@ -138,11 +138,70 @@ table td {
 }
 
 /* =============section1================= */
+#section1 {
+  width: 100%;
+  height: 45vw;
+  border: 0.2vw solid #143d59;
+  margin-top: 6%;
+  background-image: url(/resources/images/milk.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#sect1_cont1 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#sect1_cont1 h2 {
+  font-size: 4vw;
+  color: white;
+}
+#strong_head {
+  font-size: 6vw;
+  color: #f4b41a;
+  border: 0.2vw solid #f4b41a;
+}
+#strong_head {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #14508c 0%,
+    #439dd6 25%,
+    #79ccbc 50%,
+    #f4ee4e 75%,
+    #f38f2f 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s infinite alternate-reverse;
+  display: inline-block;
+  font-size: 6vw;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+#sect1_cont1 {
+  color: white;
+  font-size: 3vw;
+  margin-top: 11%;
+  font-weight: 100;
+}
 /*===========Section 2===============*/
 #section2 {
   height: 40vw;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
