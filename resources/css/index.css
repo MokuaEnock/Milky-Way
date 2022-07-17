@@ -1,4 +1,4 @@
-div {
+main div {
   border: 1px black solid;
 }
 * {
@@ -6,16 +6,16 @@ div {
   padding: 0;
 }
 body {
-  background-color: #d0f0c0;
+  background-color: #f4b41a;
   font-family: "Poppins", sans-serif;
 }
 a {
   text-decoration: none;
+  color: #f4b41a;
 }
 h2 {
   text-align: center;
   font-size: 1.7vw;
-  text-decoration: underline;
 }
 h3 {
   font-size: 1.5vw;
@@ -39,9 +39,18 @@ table {
   margin-left: 5%;
 }
 .input {
+  background-color: #f4b41a;
+  border: none;
+  outline: none;
+  resize: none;
+  border-radius: 0.3vw;
+  text-align: center;
   height: 12%;
   width: 20%;
   font-size: 1.3vw;
+}
+* :focus {
+  outline: none;
 }
 label {
   font-size: 1.5vw;
@@ -53,6 +62,25 @@ label {
   border: 0.2 solid seagreen;
   font-size: 1.3vw;
 }
+table {
+  border: 0.3vw solid #f4b41a;
+  width: 70%;
+  margin-left: 20%;
+  border-collapse: collapse;
+  box-shadow: 0 0 0.4vw rgba(0, 0, 0, 0.15);
+}
+table th {
+  background-color: #f4b41a;
+  color: #143d59;
+  text-align: center;
+  padding: 0.5vw 0.5vw;
+}
+table td {
+  padding: 0.2vw, 0.2vw;
+  text-align: center;
+  color: white;
+}
+
 /*==========Head===============*/
 #head {
   height: 4vw;
@@ -67,6 +95,7 @@ label {
   width: 30%;
   height: 100%;
   font-size: 2vw;
+  color: #143d59;
   font-weight: 800;
   display: flex;
   flex-direction: row;
@@ -112,6 +141,7 @@ label {
 #nav_head h2 {
   text-align: center;
   font-size: 1.7vw;
+  color: #143d59;
 }
 #nav_cont {
   height: 80%;
@@ -124,6 +154,11 @@ label {
 .nav_conts {
   width: 13%;
   height: 100%;
+  background-color: #143d59;
+  text-align: center;
+  border: 0.2vw solid #143d59;
+  border-radius: 1vw;
+  color: #f4b41a;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -140,15 +175,26 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #143d59;
+
+  box-shadow: 0.2vw 0.2vw 0.5vw grey;
 }
 #sect1_head {
   width: 30%;
   height: 10%;
   margin-left: 10%;
-  margin-top: -1.5%;
-  background-color: #d0f0c0;
+  margin-top: -1.8%;
+  background-color: #f4b41a;
+  border: 0.4vw solid #143d59;
+  color: #143d59;
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
+  font-size: 2vw;
+}
+#sect1_cont_par1 {
+  text-decoration: underline;
+  font-size: 1.8vw;
+  font-weight: 500;
 }
 #sect1_cont {
   width: 100%;
@@ -159,13 +205,33 @@ label {
   align-items: center;
 }
 .sect1_conts {
-  width: 49%;
-  height: 100%;
+  width: 30%;
+  height: 70%;
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 3%;
   text-align: center;
   font-size: 1.6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1vw;
+  color: #f4b41a;
+}
+#sect1_cont1 p {
+  font-size: 1.9vw;
+  line-height: 200%;
+}
+#sect1_cont_par2 {
+  text-align: left;
+  padding-left: 10%;
+}
+#list1 {
+  list-style: none;
+  text-align: left;
+  padding-left: 05%;
+  margin-top: -15%;
 }
 /*===========Section 2===============*/
 #section2 {
@@ -175,15 +241,22 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #143d59;
 }
 #sect2_head {
-  width: 30%;
+  width: 20%;
   height: 10%;
   margin-left: 60%;
   margin-top: -1.5%;
-  background-color: #d0f0c0;
+  background-color: #f4b41a;
+  color: #143d59;
+  border: 0.4vw solid #143d59;
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #sect2_cont {
   height: 90%;
@@ -192,6 +265,10 @@ label {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border-top: 0.2vw #f4b41a solid;
+}
+#sect2_cont h3 {
+  color: #f4b41a;
 }
 .sect2_conts {
   height: 50%;
@@ -211,6 +288,8 @@ label {
   width: 100%;
   height: 15vw;
   margin-top: 3%;
+  background-color: #143d59;
+  color: #143d59;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -220,9 +299,14 @@ label {
   width: 15%;
   height: 20%;
   margin-top: -1.5%;
-  background-color: #d0f0c0;
+  border: 0.4vw solid #143d59;
+  background-color: #f4b41a;
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 #sect3_cont {
   height: 80%;
@@ -271,15 +355,22 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #143d59;
 }
 #sect4_head {
   height: 10%;
-  width: 20%;
+  width: 15%;
   margin-left: 10%;
   margin-top: -1.5%;
-  background-color: #d0f0c0;
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #143d59;
+  align-items: center;
+  background-color: #f4b41a;
+  border: 0.4vw solid #143d59;
 }
 #sect4_cont {
   height: 90%;
@@ -334,6 +425,7 @@ label {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #143d59;
 }
 #prod_head {
   height: 10%;
@@ -341,6 +433,9 @@ label {
   margin-top: -1.2%;
   background-color: #d0f0c0;
   border-radius: 0.5vw;
+  background-color: #f4b41a;
+  color: #143d59;
+  border: 0.4vw solid #143d59;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -372,12 +467,15 @@ label {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #143d59;
 }
 #sect5_head {
   height: 10%;
   width: 15%;
   margin-top: -1.5%;
-  background-color: #d0f0c0;
+  background-color: #f4b41a;
+  color: #143d59;
+  border: 0.4vw solid #143d59;
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
   display: flex;
@@ -388,7 +486,6 @@ label {
 #sect5_form {
   height: 90%;
   width: 100%;
-  border: 0.2vw solid seagreen;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -444,6 +541,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #143d59;
   align-items: center;
 }
 #sect6_head {
@@ -451,9 +549,11 @@ label {
   width: 15%;
   margin-left: 70%;
   margin-top: -1.5%;
-  background-color: #d0f0c0;
+  background-color: #f4b41a;
+  color: #143d59;
+  border: 0.4vw solid #143d59;
   border-radius: 0.5vw;
-  box-shadow: 0.2vw 0.2vw 0.8vw grey;
+  box-shadow: 0.2vw 0.2vw 0.8vw;
 }
 #sect6_cont {
   width: 100%;
