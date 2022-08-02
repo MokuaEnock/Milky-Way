@@ -530,7 +530,6 @@ h3 {
 #sect5_cont2 {
   width: 50%;
   height: 100%;
-  border: thin white solid;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -575,7 +574,7 @@ h3 {
 }
 
 /*===========Section 6===============*/
-#section6 {
+#sect6 {
   width: 100%;
   height: 30vw;
   margin-top: 1%;
@@ -588,14 +587,79 @@ h3 {
 
 #sect6_head {
   height: 10%;
-  width: 15%;
-  margin-left: 70%;
+  width: 20%;
   margin-top: -1.5%;
   background-color: #f4b41a;
   color: #143d59;
   border: 0.4vw solid #143d59;
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
+  font-size: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sect6_cont {
+  width: 100%;
+  height: 90%;
+  border-top: #f4b41a solid thin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#s6_cont1 {
+  width: 100%;
+  height: 15%;
+  border: #f4b41a solid thin;
+  color: white;
+
+  font-size: 1.7vw;
+}
+
+#s6_cont1 form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#s6_cont1 form input {
+  margin-left: 1%;
+  width: 15%;
+  height: 80%;
+  border: none;
+  border-radius: 0.4vw;
+  font-size: 1.7vw;
+  color: #143d59;
+  text-align: center;
+}
+
+#s6_cont1 input:focus {
+  outline: none;
+}
+
+#s6_cont2 {
+  width: 100%;
+  height: 84%;
+  border: #f4b41a solid thin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#s6_cont2 div {
+  border: #f4b41a solid thin;
+  height: 90%;
+  width: 26%;
+  border-radius: 1vw;
+
 }
 
 
