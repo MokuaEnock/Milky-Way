@@ -287,7 +287,7 @@ h3 {
 
 }
 
-td input {
+#sect2_cont td input {
   text-align: center;
   width: 100%;
   height: 96%;
@@ -295,7 +295,11 @@ td input {
   border: none;
 }
 
-thead {
+#sect2_cont td input:focus {
+  outline: none;
+}
+
+#sect2_cont thead {
   color: #143d59;
   background-color: #f4b41a;
   font-size: 1.7vw;
@@ -304,40 +308,40 @@ thead {
   border: none;
 }
 
-.input1 {
+#sect2_cont .input1 {
   width: 20%;
 }
 
-tbody tr th {
+#sect2_cont tbody tr th {
   color: white;
   font-size: 1.8vw;
   font-weight: 600;
 }
 
-tbody tr {
+#sect2_cont tbody tr {
   color: white;
   border-top: solid thin white;
 }
 
-tbody tr th {
+#sect2_cont tbody tr th {
   border-right: solid thin white;
 
 }
 
-.shade {
+#sect2_cont .shade {
   width: 35%;
 }
 
-.prdt,
-.breed {
+#sect2_cont .prdt,
+#sect2_cont .breed {
   width: 30%;
 }
 
-.cows {
+#sect2_cont .cows {
   width: 25%;
 }
 
-.prod {
+#sect2_cont .prod {
   width: 30%;
 }
 
@@ -350,12 +354,12 @@ tbody tr th {
   flex-direction: column;
   justify-content: space-between;
   background-color: #143d59;
+  align-items: center;
 }
 
 #sect4_head {
   height: 10%;
   width: 15%;
-  margin-left: 10%;
   margin-top: -1.5%;
   border-radius: 0.5vw;
   box-shadow: 0.2vw 0.2vw 0.8vw;
@@ -368,6 +372,68 @@ tbody tr th {
   border: 0.4vw solid #143d59;
 }
 
+#sect4 form {
+  width: 100%;
+  height: 90%;
+  border: #f4b41a solid thin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  width: 40%;
+  text-align: center;
+  height: 90%;
+  font-size: 1.5vw;
+  border: solid thick #f4b41a;
+  border-collapse: collapse;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+
+}
+
+td input {
+  text-align: center;
+  width: 100%;
+  height: 96%;
+  font-size: 1.4vw;
+  border: none;
+}
+
+td input:focus {
+  outline: none;
+}
+
+thead {
+  color: #143d59;
+  background-color: #f4b41a;
+  font-size: 1.7vw;
+  font-weight: 500;
+  height: 15%;
+  border: none;
+}
+
+tbody tr th {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+tbody tr {
+  color: white;
+  border-top: solid thin white;
+  font-size: 1.5vw;
+}
+
+tbody tr th {
+  border-right: solid thin white;
+
+}
+table .cost{
+  width: 25%;
+}
 /*=========Production report=============*/
 #production_rep {
   height: 30vw;

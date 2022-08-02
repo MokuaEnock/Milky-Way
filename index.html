@@ -40,7 +40,7 @@
       </div>
     </section>
 
-    <!-- =============Sectio user info======================= -->
+    <!-- =============Section user info======================= -->
     <form id="sect_name">
       <div id="sectn_cont">
         <div id="name">
@@ -150,6 +150,44 @@
     <section id="sect4">
       <div id="section4">
         <div id="sect4_head"><h2>Production</h2></div>
+        <form>
+          <table>
+            <thead>
+              <tr>
+                <th class="which"></th>
+                <th class="factor">Factor</th>
+                <th class="cost">Cost per Month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th rowspan="2" class="which">Wages</th>
+                <td class="factor">Driver</td>
+                <td  class="cost">
+                  <input type="number" />
+                </td>
+              </tr>
+              <tr>
+                <td class="factor">Groundsman</td>
+                <td class="cost"><input type="number" /></td>
+              </tr>
+              <tr>
+                <th rowspan="2" class="which">Servicing</th>
+                <td class="factor">Vehicles</td>
+                <td class="cost"><input type="number" /></td>
+              </tr>
+              <tr>
+                <td class="factor">Milking machines</td>
+                <td class="cost"><input type="number" /></td>
+              </tr>
+              <tr>
+                <th class="which">Miscellaneous</th>
+                <td class="factor">Cost per month</td>
+                <td class="cost"><input type="number"></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
       </div>
       <!-- ===========Production============ -->
       <div id="production_rep">
