@@ -242,11 +242,15 @@ tbody tr th {
   border-right: solid thin white;
 
 }
-
-.prdt {
+.shade{
+  width: 35%;
+}
+.prdt, .breed {
   width: 30%;
 }
-
+.cows{
+width: 25%;
+}
 .prod {
   width: 30%;
 }
