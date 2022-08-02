@@ -4,7 +4,16 @@ main div {
 
 html {
   scroll-behavior: smooth;
-  overflow: hidden;
+
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 * {
