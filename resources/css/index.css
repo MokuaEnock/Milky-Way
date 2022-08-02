@@ -378,11 +378,11 @@ h3 {
   border: #f4b41a solid thin;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-table {
+#sect4 table {
   width: 40%;
   text-align: center;
   height: 90%;
@@ -394,19 +394,19 @@ table {
 
 }
 
-td input {
+#sect4 td input {
   text-align: center;
   width: 100%;
-  height: 96%;
+  height: 95%;
   font-size: 1.4vw;
   border: none;
 }
 
-td input:focus {
+#sect4 td input:focus {
   outline: none;
 }
 
-thead {
+#sect4 thead {
   color: #143d59;
   background-color: #f4b41a;
   font-size: 1.7vw;
@@ -415,24 +415,24 @@ thead {
   border: none;
 }
 
-tbody tr th {
+#sect4 tbody tr th {
   color: white;
   font-size: 1.5vw;
   font-weight: 600;
 }
 
-tbody tr {
+#sect4 tbody tr {
   color: white;
   border-top: solid thin white;
   font-size: 1.5vw;
 }
 
-tbody tr th {
+#sect4 tbody tr th {
   border-right: solid thin white;
 
 }
-table .cost{
-  width: 25%;
+#sect4 table .cost{
+  width: 28%;
 }
 /*=========Production report=============*/
 #production_rep {
