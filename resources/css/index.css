@@ -555,6 +555,9 @@ h3 {
   height: 80%;
   border: none;
   margin-left: 3%;
+  font-size: 1.5vw;
+  text-align: center;
+  color: #143d59;
 }
 
 #sect5_cont2 div input:focus {
@@ -564,6 +567,11 @@ h3 {
 #sect5_cont2 table {
   height: 70%;
   width: 50%;
+}
+
+.input2 {
+  width: 40%;
+  color: #143d59;
 }
 
 /*===========Section 6===============*/
