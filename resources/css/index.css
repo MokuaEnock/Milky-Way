@@ -193,13 +193,61 @@ h3 {
   align-items: center;
 
 }
-table{
-  width: 50%;
-  height: 100%;
+
+#sect2_cont table {
+  width: 40%;
+  text-align: center;
+  height: 90%;
   font-size: 1.5vw;
+  border: solid thick #f4b41a;
+  border-collapse: collapse;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+
 }
+
 td input {
   text-align: center;
+  width: 100%;
+  height: 96%;
+  font-size: 1.4vw;
+  border: none;
+}
+
+thead {
+  color: #143d59;
+  background-color: #f4b41a;
+  font-size: 1.7vw;
+  font-weight: 500;
+  height: 15%;
+  border: none;
+}
+
+.input1 {
+  width: 20%;
+}
+
+tbody tr th {
+  color: white;
+  font-size: 1.8vw;
+  font-weight: 600;
+}
+
+tbody tr {
+  color: white;
+  border-top: solid thin white;
+}
+
+tbody tr th {
+  border-right: solid thin white;
+
+}
+
+.prdt {
+  width: 30%;
+}
+
+.prod {
   width: 30%;
 }
 
