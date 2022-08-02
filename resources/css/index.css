@@ -200,6 +200,20 @@ h3 {
   height: 100%;
   border: #143d59 thin solid;
   border-radius: 3vw;
+  background-color: #f4b41a;
+  color: #143d59;
+  font-size: 2.0vw;
+  font-weight: 600;
+}
+
+#sectn_cont1 button:hover {
+  width: 13%;
+  height: 90%;
+  border: #fff 0.4vw solid;
+  background-color: #143d59;
+  color: #f4b41a;
+  font-weight: 200;
+
 }
 
 #sectn_cont label {
