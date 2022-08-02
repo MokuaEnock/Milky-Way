@@ -155,6 +155,73 @@ h3 {
   font-weight: 100;
 }
 
+/* =================Section names======================= */
+#sect_name {
+  width: 100%;
+  height: 20vw;
+  background-color: #143d59;
+  margin-top: 1.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#sectn_cont {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+#sectn_cont div {
+  width: 26%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#sectn_cont1 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#sectn_cont1 button {
+  width: 15%;
+  height: 100%;
+  border: #143d59 thin solid;
+  border-radius: 3vw;
+}
+
+#sectn_cont label {
+  color: white;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+.input_name {
+  width: 60%;
+  height: 15%;
+  border: none;
+  border-radius: .2vw;
+  text-align: center;
+  color: #143d59;
+  font-size: 1.5vw;
+}
+
+.input_name:focus {
+  outline: thin solid #143d59;
+}
+
 /*===========Section 2===============*/
 /* sect */
 #sect2 {
@@ -242,15 +309,20 @@ tbody tr th {
   border-right: solid thin white;
 
 }
-.shade{
+
+.shade {
   width: 35%;
 }
-.prdt, .breed {
+
+.prdt,
+.breed {
   width: 30%;
 }
-.cows{
-width: 25%;
+
+.cows {
+  width: 25%;
 }
+
 .prod {
   width: 30%;
 }
