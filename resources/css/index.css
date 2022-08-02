@@ -436,7 +436,7 @@ h3 {
 }
 
 /*===========Section 5===============*/
-#section5 {
+#sect5 {
   width: 100%;
   height: 40vw;
   margin-top: 1%;
@@ -461,7 +461,68 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+#sect5 form{
+  width: 100%;
+  height: 90%;
+  border: #f4b41a solid thin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+#sect5 table {
+  width: 40%;
+  text-align: center;
+  height: 90%;
+  font-size: 1.5vw;
+  border: solid thick #f4b41a;
+  border-collapse: collapse;
+  border-top-left-radius: 1vw;
+  border-top-right-radius: 1vw;
+
+}
+
+#sect5 td input {
+  text-align: center;
+  width: 100%;
+  height: 95%;
+  font-size: 1.4vw;
+  border: none;
+}
+
+#sect5 td input:focus {
+  outline: none;
+}
+
+#sect5 thead {
+  color: #143d59;
+  background-color: #f4b41a;
+  font-size: 1.7vw;
+  font-weight: 500;
+  height: 15%;
+  border: none;
+}
+
+#sect5 tbody tr th {
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 600;
+}
+
+#sect5 tbody tr {
+  color: white;
+  border-top: solid thin white;
+  font-size: 1.5vw;
+}
+
+#sect5 tbody tr th {
+  border-right: solid thin white;
+
+}
+#sect5 table .cost{
+  width: 28%;
+}
 /*===========Section 6===============*/
 #section6 {
   width: 100%;
