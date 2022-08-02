@@ -434,34 +434,6 @@ h3 {
 #sect4 table .cost{
   width: 28%;
 }
-/*=========Production report=============*/
-#production_rep {
-  height: 30vw;
-  width: 100%;
-  margin-top: 1.2%;
-  border-top: 0.2vw solid #f4b41a;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #143d59;
-}
-
-#prod_head {
-  height: 10%;
-  width: 18%;
-  margin-top: -1.7%;
-  background-color: #d0f0c0;
-  border-radius: 0.5vw;
-  background-color: #f4b41a;
-  color: #143d59;
-  border: 0.4vw solid #143d59;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  box-shadow: 0.2vw 0.2vw 0.8vw;
-}
 
 /*===========Section 5===============*/
 #section5 {
