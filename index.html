@@ -34,116 +34,311 @@
     <section id="sect1">
       <div id="section1">
         <div id="sect1_cont1">
-          <h2>We are <strong id="strong_head">Milky Way</strong></h2>
+          <h2>We are <strong id="strong_head">Milky~Way</strong></h2>
           <p>Leading producers of milk in Kenya.</p>
         </div>
       </div>
     </section>
+
+    <!-- =============Section user info======================= -->
+    <form id="sect_name">
+      <div id="sectn_cont">
+        <div id="name">
+          <label for="fname">Hello what is your name?</label>
+          <input type="text" id="fname" class="input_name" required />
+        </div>
+        <div id="location">
+          <label for="locat">In which county is you farm located?</label>
+          <input type="text" id="locat" class="input_name" required />
+        </div>
+        <div id="experience">
+          <label for="exper">For how long have you been a farmer?</label>
+          <input type="number" id="exper" class="input_name" required />
+        </div>
+      </div>
+      <div id="sectn_cont1">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
     <!---===========Section 2===============-->
     <section id="sect2">
-      <div id="section2">
-        <div id="sect2_head">
-          <h2>The Inventory</h2>
-        </div>
-        <div id="sect2_cont">
-          <div id="sect2_cont1" class="sect2_conts">
-            <div id="sect2_cont1_1" class="sect2_containers">
-              <h3>Capital</h3>
-              <table>
-                <tr>
-                  <th>Resource</th>
-                  <th>Quantity</th>
-                </tr>
-                <tbody>
-                  <tr>
-                    <td>Vehicles</td>
-                    <td>3</td>
-                  </tr>
-                  <tr>
-                    <td>Milking Machines</td>
-                    <td>8</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div id="sect2_cont1_2" class="sect2_containers">
-              <h3>Land</h3>
-              <table>
-                <tr>
-                  <th>Resource</th>
-                  <th>Quantity</th>
-                </tr>
-                <tbody>
-                  <tr>
-                    <td>Vehicles</td>
-                    <td id="tVehicles">3</td>
-                  </tr>
-                  <tr>
-                    <td>Milking Machines</td>
-                    <td id="tMilkers">8</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+      <div id="sect2_head">
+        <h2>The Inventory</h2>
+      </div>
+      <form id="sect2_cont">
+        <table>
+          <thead>
+            <tr>
+              <th class="prod">Production Factor</th>
+              <th class="prdt">Product</th>
+              <th class="input1">Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="2" class="prod">Land</th>
+              <td class="prdt">Area for feeds.</td>
+              <td class="input1">
+                <input type="number" placeholder="In Acres" />
+              </td>
+            </tr>
+            <tr>
+              <td class="prdt">Area for animals.</td>
+              <td class="input1">
+                <input type="number" placeholder="In Acres" />
+              </td>
+            </tr>
+            <tr>
+              <th rowspan="2" class="prod">Capital</th>
+              <td class="prdt">Vehicles</td>
+              <td class="input1"><input type="number" placeholder="5" /></td>
+            </tr>
+            <tr>
+              <td class="prdt">Milking Machines</td>
+              <td class="input1"><input type="number" placeholder="5" /></td>
+            </tr>
+            <tr>
+              <th rowspan="2" class="prod">Labor</th>
+              <td class="prdt">Drivers</td>
+              <td class="input1"><input type="number" placeholder="5" /></td>
+            </tr>
+            <tr>
+              <td class="prdt">Groundsmen</td>
+              <td class="input1"><input type="number" placeholder="5" /></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th class="shade">Shade</th>
+              <th class="breed">Breed</th>
+              <th class="cows">Cows</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="shade">Shade 1</th>
+              <td class="breed">Fresian</td>
+              <td class="cows">
+                <input type="number" placeholder="20" />
+              </td>
+            </tr>
+
+            <tr>
+              <th class="shade">Shade 2</th>
+              <td class="breed">Jersey</td>
+              <td class="cows">
+                <input type="number" placeholder="20" />
+              </td>
+            </tr>
+            <tr>
+              <th class="shade">Shade 3</th>
+              <td class="breed">Fresian</td>
+              <td class="cows">
+                <input type="number" placeholder="20" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </section>
+
+    <!---===========Section 4===============-->
+    <section id="sect4">
+      <div id="section4">
+        <div id="sect4_head"><h2>Production Cost</h2></div>
+        <form>
+          <table>
+            <thead>
+              <tr>
+                <th class="which"></th>
+                <th class="factor">Factor</th>
+                <th class="cost">Cost/Month</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th rowspan="2" class="which">Wages</th>
+                <td class="factor">Driver</td>
+                <td class="cost">
+                  <input type="number" />
+                </td>
+              </tr>
+              <tr>
+                <td class="factor">Groundsman</td>
+                <td class="cost"><input type="number" /></td>
+              </tr>
+              <tr>
+                <th rowspan="2" class="which">Servicing</th>
+                <td class="factor">Vehicles</td>
+                <td class="cost"><input type="number" /></td>
+              </tr>
+              <tr>
+                <td class="factor">Milking machines</td>
+                <td class="cost"><input type="number" /></td>
+              </tr>
+              <tr>
+                <th class="which">Miscellaneous</th>
+                <td class="factor">Cost per month</td>
+                <td class="cost"><input type="number" /></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Cost per day</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Feeds</th>
+                <td><input type="number" /></td>
+              </tr>
+              <tr>
+                <th>Medicine</th>
+                <td><input type="number" /></td>
+              </tr>
+              <tr>
+                <th>Vaccines</th>
+                <td><input type="number" /></td>
+              </tr>
+              <tr>
+                <th>Animal Supplements</th>
+                <td><input type="number" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </section>
+    <!---===========Section 5===============-->
+    <section id="sect5">
+      <div id="sect5_head">
+        <h2>Milk</h2>
+      </div>
+      <form>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Milk Production</th>
+            </tr>
+            <tr>
+              <th>Breed</th>
+              <th class="input2">avr Milk/Day</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fresian</td>
+              <td><input type="number" class="input2" /></td>
+            </tr>
+            <tr>
+              <td>Jersey</td>
+              <td><input type="number" class="input2" /></td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td></td>
+            </tr>
+          </tbody>
+          <thead>
+            <tr>
+              <th colspan="2">Shades</th>
+            </tr>
+            <tr>
+              <th>Shade</th>
+              <th>Total Milk/day</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Shade 1</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Shade 2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Shade 3</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="sect5_cont2">
+          <h3>Sales</h3>
+          <div>
+            <label for="selling"
+              >How much is the selling price per liter?
+            </label>
+            <input type="number" id="selling" />
           </div>
-          <div id="sect2_cont2" class="sect2_conts">
-            <div id="sect2_cont2_1" class="sect2_containers">
-              <h3>Labor</h3>
-              <table>
-                <tr>
-                  <th>Resource</th>
-                  <th>Quantity</th>
-                </tr>
-                <tbody>
-                  <tr>
-                    <td>Drivers</td>
-                    <td id="tDrivers">3</td>
-                  </tr>
-                  <tr>
-                    <td>Groundsmen</td>
-                    <td id="tMen">4</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div id="sect2_cont2_2" class="sect2_containers">
-              <h3>Cows and Shades</h3>
-              <table>
-                <tr>
-                  <th>Shade</th>
-                  <th>No. of Cows</th>
-                  <th>Breed of Cow</th>
-                </tr>
-                <tbody>
-                  <tr>
-                    <td>Shade 1</td>
-                    <td id="fresianCow1">8</td>
-                    <td>Fresian</td>
-                  </tr>
-                  <tr>
-                    <td>Shade 2</td>
-                    <td id="jerseyCow1">12</td>
-                    <td>Jersey</td>
-                  </tr>
-                  <tr>
-                    <td>Shade 3</td>
-                    <td id="fresianCow2">9</td>
-                    <td>Fresian</td>
-                  </tr>
-                  <tr>
-                    <td>Shade 4</td>
-                    <td id="jerseyCow2">10</td>
-                    <td>Jersey</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Buyer</th>
+                <th class="input2">Liters bought</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Buyer 1</td>
+                <td><input type="number" class="input2" /></td>
+              </tr>
+              <tr>
+                <td>Buyer 2</td>
+                <td><input type="number" class="input2" /></td>
+              </tr>
+              <tr>
+                <td>Buyer 3</td>
+                <td><input type="number" class="input2" /></td>
+              </tr>
+              <tr>
+                <td>Buyer 4</td>
+                <td><input type="number" class="input2" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+    </section>
+    <!---===========Section 6===============-->
+    <section id="sect6">
+      <div id="sect6_head">Generate report</div>
+      <div id="sect6_cont">
+        <div id="s6_cont1">
+          <form>
+            <label for="year">Enter year to forecast?</label>
+            <input type="year" id="year" />
+          </form>
+        </div>
+        <div id="s6_cont2">
+          <div>
+            <h4>Production Report</h4>
+            <button>Generate</button>
+
+          </div>
+          <div>
+            <h4>Sales Report</h4>
+            <button>Generate</button>
+          </div>
+          <div>
+            <h4>Comprehensive Report</h4>
+            <button>Generate</button>
+
           </div>
         </div>
       </div>
     </section>
+
     <!---===========Section 3===============-->
-    <section id="sect3">
+<!--     <section id="sect3">
       <div id="section3">
         <div id="sect3_head"><h2>Partners</h2></div>
         <div id="sect3_cont">
@@ -155,270 +350,7 @@
         </div>
       </div>
     </section>
-    <!---===========Section 4===============-->
-    <section id="sect4">
-      <div id="section4">
-        <div id="sect4_head"><h2>Production</h2></div>
-        <div id="sect4_cont">
-          <form id="sect4_form" onsubmit="return false;">
-            <div id="s4f_cont1" class="s4f_conts">
-              <div id="s4f_cont1_1" class="s4f_conts_">
-                <h3>Capital</h3>
-                <label for="s4_service"
-                  >How much do you spend on servicing machinery in a
-                  month?</label
-                >
-                <br />
-                <input
-                  type="number"
-                  id="s4_service"
-                  class="input"
-                  placeholder="1000"
-                />
-                <br />
-                <label for="medicine"
-                  >How much do you spend on medicine per month?</label
-                >
-                <br />
-                <input
-                  type="number"
-                  class="input"
-                  id="medicine"
-                  placeholder="5000"
-                />
-              </div>
-              <div id="s4f_cont1_2" class="s4f_conts_">
-                <h3>Land</h3>
-                <label for="valueLand">
-                  What is the current valuation of your Land?
-                </label>
-                <br />
-                <input
-                  type="number"
-                  id="valueLand"
-                  class="input"
-                  placeholder="1000000"
-                />
-                <br />
-                <label for="feeds"
-                  >How much do you spend on feeds per month?</label
-                >
-                <br />
-                <input
-                  type="number"
-                  id="feeds"
-                  class="input"
-                  placeholder="5000"
-                />
-              </div>
-            </div>
-            <div id="s4f_cont2" class="s4f_conts">
-              <div id="s4f_cont2_1" class="s4f_conts_">
-                <h3>Labor</h3>
-                <label for="employees"
-                  >What are the wages for an employee in an day?</label
-                >
-                <br />
-                <input
-                  type="number"
-                  id="employees"
-                  class="input"
-                  placeholder="500"
-                />
-              </div>
-              <div id="s4f_cont2_2" class="s4f_conts_">
-                <h3>Entrepreneurship</h3>
-                <label for="other"
-                  >How much do you spend on miscellaneous cost in a day?</label
-                >
-                <br />
-                <input
-                  type="number"
-                  id="other"
-                  class="input"
-                  placeholder="500"
-                />
-                <br />
-                <button id="subButton" type="button" class="button">
-                  Submit
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <!-- ===========Production============ -->
-      <div id="production_rep">
-        <div id="prod_head">
-          <h2>Production Report</h2>
-        </div>
-        <div id="prod_cont">
-          <div class="prod_conts" id="prod_cont1">
-            <div id="pd_cont1_head"><h3>Inventory</h3></div>
-            <p>
-              The total Number of Jersey cows is: <span id="jerseyCows"></span>
-            </p>
-            <p>
-              The total Number of Fresian cows is:
-              <span id="fresianCows"></span>
-            </p>
-            <p>The total number of cows is: <span id="allCows"></span></p>
-            <p>
-              The total number of farm machinery is:
-              <span id="farmMachinery"></span>
-            </p>
-            <p>The total number of employees is: <span id="employe"></span></p>
-          </div>
-          <div class="prod_conts" id="prod_cont2">
-            <div id="pd_cont2_head"><h3>Production Cost per day</h3></div>
-            <div id="pd_cont1_cont">
-              <p>
-                The current landrate payable is: <span id="landRate"></span>
-              </p>
-              <p>The cost of feeds is: <span id="costFeeds"></span></p>
-              <p>
-                The current cost of medicine and vaccines is:
-                <span id="medicineCost"></span>
-              </p>
-              <p>The total wages are: <span id="wages"></span></p>
-
-              <p>
-                The total miscellaneous cost are: <span id="otherCost"></span>
-              </p>
-              <p>
-                The total service cost of machinery is:
-                <span id="serviceCost"></span>
-              </p>
-              <p>The total is: <span id="productionCost"></span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---===========Section 5===============-->
-    <section id="sect5">
-      <div id="section5">
-        <div id="sect5_head">
-          <h2>Sales</h2>
-        </div>
-        <form id="sect5_form" onsubmit="return false;">
-          <div id="s5f_cont1">
-            <h3>Milk Production</h3>
-            <label for="jerseyMilk"
-              >Average milk production of a Jersey per day?</label
-            >
-            <input
-              type="number"
-              id="jerseyMilk"
-              class="form_input"
-              placeholder="60"
-            />
-            <br />
-            <label for="fresianMilk"
-              >Average milk production of a Fresian per day?</label
-            >
-            <input
-              type="number"
-              id="fresianMilk"
-              class="form_input"
-              placeholder="60"
-            />
-          </div>
-          <div id="s5f_cont2">
-            <div id="s5f_cont2_cont">
-              <div class="s5f_cont2_1">
-                <h3>Major Partners</h3>
-                <label for="majorPrice">Buying price per litre?</label>
-                <br />
-                <input type="number" id="majorPrice" class="input" />
-                <br />
-                <label for="majorLitre">Number of litres bought?</label>
-                <br />
-                <input type="number" id="majorLitre" class="input" />
-              </div>
-              <div class="s5f_cont2_1">
-                <h3>Minor Partners</h3>
-                <label for="minorPrice">Buying price per litre?</label>
-                <br />
-                <input type="number" class="input" id="minorPrice" />
-                <br />
-                <label for="minorLitre">Number of litres bought?</label>
-                <br />
-                <input type="number" class="input" id="minorLitre" />
-              </div>
-            </div>
-          </div>
-          <div id="s5f_cont3">
-            <div class="s5f_cont3">
-              <h3>Weekly Report</h3>
-              <button id="button5_1" type="button" class="button5">
-                Forecast
-              </button>
-            </div>
-            <div class="s5f_cont3">
-              <h3>Monthly Report</h3>
-              <button id="button5_2" type="button" class="button5">
-                Forecast
-              </button>
-            </div>
-            <div class="s5f_cont3">
-              <h3>Yearly Report</h3>
-              <button id="button5_3" type="button" class="button5">
-                Forecast
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-    <!---===========Section 6===============-->
-    <section id="sect6">
-      <div id="section6">
-        <div id="sect6_head"><h2>Report</h2></div>
-        <div id="sect6_cont">
-          <div id="yearReport" class="reports">
-            <h3>Yearly Report</h3>
-            <p>
-              The total milk production for the year is
-              <span id="yearTotalMilk"></span> litres.
-            </p>
-            <br />
-            <p>
-              The total litres of milk sold is
-              <span id="minorMajor"></span> litres.
-            </p>
-            <br />
-            <p>
-              The total revenue generated from the sale of milk is
-              <span id="revenueYear"></span>
-            </p>
-          </div>
-          <div id="monthReport" class="reports">
-            <h3>Monthly Report</h3>
-            <p id="monthMilkProd2"></p>
-            <p id="milkMonthSold2"></p>
-            <p id="revenueMonth"></p>
-          </div>
-          <div id="weekReport" class="reports">
-            <h3>Weekly Report</h3>
-            <p>
-              The amount of milk produced weekly is
-              <span id="milkProdWeek"></span>
-            </p>
-            <br />
-            <p>
-              The amount of milk sold weekly is <span id="milkSoldWeek"></span>
-            </p>
-            <br />
-            <p>
-              The amount of revenue generated weekly is
-              <span id="revenueWeek"></span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
+ -->
     <script src="./resources/script/index.js"></script>
   </body>
 </html>
